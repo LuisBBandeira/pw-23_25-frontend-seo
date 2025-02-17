@@ -1,10 +1,10 @@
 import './App.css'
-import { Counter } from "./components/Counter";
+import CounterRef  from "./components/CounterRef";
 
 function App() {
   return (
     <>
-      <Counter />
+      <CounterRef />
     </>
   )
 }
