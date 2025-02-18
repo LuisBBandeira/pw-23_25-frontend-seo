@@ -1,11 +1,14 @@
 import './App.css'
-import CounterRef  from "./components/CounterRef";
+import { Routes , Route } from 'react-router-dom';
+import HomePage from "./pages/Home";
+import AboutPage from './pages/About';
 
 function App() {
   return (
-    <>
-      <CounterRef />
-    </>
+    <Routes>
+      <Route path='/' element={<HomePage/>} />
+      <Route path='/about' element={<AboutPage/>} />
+    </Routes>
   )
 }
 
